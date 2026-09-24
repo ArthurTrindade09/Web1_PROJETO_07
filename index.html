@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 
-<!-- Usando as tags de texto <h1-h6> -->
-
 <html>
     <head>
-        <title>Documento</title>
+        <title>Cadastro de usuotário</title>
     </head>
+
     <body>
-        <section>
-            <h1>Texto grande</h1>
-            <h2>Texto quase grande </h2>
-            <h3>Texto médio</h3>
-            <h4>Texto pouco pequeno</h4>
-            <h5>Texto pequeno</h5>
-            <h6>Texto bem pequeno</h6>
-        </section>
+        <header><h1>Cadastro de Usuário</h1></header>
+            <form action="/enviar_dados" method="get">
+
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="name" name="Nome" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="Email" required><br><br>
+
+                <label for="password">Senha:</label><br>
+                <input type="password" id="password" name="senha" required><br><br>
+
+                <label for="genero">Gênero</label><br>
+                <select id="genero" name="Genero" required>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="N">Não-Binário</option>
+                </select><br><br>
+
+                <label for="interesses">Interesses</label><br>
+                <input type="checkbox" id="interesses" name="interesses" value="prog">Programação<br>
+                <input type="checkbox" id="interesses" name="interesses" value="des">Design<br>
+                <input type="checkbox" id="interesses" name="interesses" value="mus">Música<br><br>
+
+                <label for="bio">Biografia:</label><br>
+                <textarea id="bio" name="bio" rows="5" cols="50" required></textarea><br><br>
+
+                <input type="submit" id="Enviar">
+                
+
+            </form>
     </body>
 </html>
